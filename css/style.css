@@ -309,13 +309,13 @@
     position: absolute;
 }
 .skills .item-text .w-50{
-    margin-left: 50%;
+    margin-left: 90%;
 }
 .skills .item-text .w-80{
-    margin-left: 80%;
+    margin-left: 90%;
 }
 .skills .item-text .w-75{
-    margin-left: 75%;
+    margin-left: 90%;
 }
 
 .progress{
