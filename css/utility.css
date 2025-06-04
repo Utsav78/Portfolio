@@ -118,29 +118,17 @@ h1, h2, h3, h4, h5, h6 {
 .title {
     position: relative;
     margin-bottom: var(--spacing-xl);
-}
-
-.title > h2 {
-    font-size: clamp(2rem, 5vw, 4rem);
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: 800;
-    color: var(--text);
-    opacity: 0.1;
-}
-
-.title div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
     text-align: center;
 }
 
-.title div h2 {
+.title h2 {
+    position: relative;
     font-size: clamp(1.5rem, 3vw, 2.5rem);
     color: var(--text);
+    font-weight: 800;
+    z-index: 2;
+    display: inline-block;
+    background: none;
 }
 
 /* Modern Grid System */
