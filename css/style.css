@@ -1082,4 +1082,11 @@
     align-items: center;
     gap: 0.5rem;
   }
+  .about .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
   
