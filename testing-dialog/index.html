@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Modal Example</title>
+
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          padding: 20px;
+      }
+
+      textarea {
+          width: 100%;
+          box-sizing: border-box;
+      }
+  </style>
+</head>
+<body>
+
+<button id="openModal">Open Modal</button>
+
+
+<dialog id="myModal">
+  <h2>Simple Modal</h2>
+
+
+  <textarea rows="10" cols="50">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </textarea>
+
+  <br><br>
+
+  <button id="closeModal">Close</button>
+</dialog>
+
+<script>
+  const modal = document.getElementById("myModal");
+  const openButton = document.getElementById("openModal");
+  const closeButton = document.getElementById("closeModal");
+
+  openButton.addEventListener("click", () => {
+    modal.showModal();
+  });
+
+  closeButton.addEventListener("click", () => {
+    modal.close();
+  });
+</script>
+
+</body>
+</html>
